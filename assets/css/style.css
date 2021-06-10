@@ -197,15 +197,15 @@ nav a{
 .contact-linx a{
     display: flex;
     margin-top: 2%;
+    flex-direction: column;
 }
 
-footer{
+.footer{
     display: flex;
     justify-content: center;
-
 }
 
-footer img{
+.footer img{
     width: 3%;
     height: 3%;
     margin-top: 1%;
@@ -234,6 +234,27 @@ a:visited{
   @media screen and (max-width: 1240px) {
     .seperator {
         width: 10%;
+    }
+    
+    /*.about-photo img {
+        src: "./assets/images/selfsmall.jpg";
+    }
+
+    /*.about-photo img{
+        width: 70%;
+        height: auto;
+    }
+
+    .about-photo{
+        width: 20%;
+    }*/
+
+    .about-photo, .about-photo img{
+        flex-basis: auto;
+    }
+
+    .about-me {
+        padding-right: 10px;
     }
   }
 
@@ -270,7 +291,7 @@ a:visited{
       top: 10%;
     }
 
-    footer img{
+    .footer img{
         width: 5%;
         height: 5%;
         margin-top: 1%;
@@ -284,27 +305,22 @@ a:visited{
       top: 5%;
     }
 
-    footer img{
-        width: 7%;
-        height: 7%;
+    .footer img{
+        width: 10%;
+        height: 10%;
         margin-top: 1%;
         margin-right: .5%;
         margin-left: .5%;
     }
   }
   
-  /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
     * {
       background:var(--accentyellow);
     }
 
-    footer img{
-        width: 9%;
-        height: 9%;
-        margin-top: 1%;
-        margin-right: .5%;
-        margin-left: .5%;
+    .label{
+        width: 15%;
     }
   }
 
@@ -313,11 +329,15 @@ a:visited{
         font-size: 200%;
     }
 
-    footer img{
-        width: 10%;
-        height: 10%;
+    /*.footer img{
+        width: 100%;
+        height: 100%;
         margin-top: 1%;
         margin-right: .5%;
         margin-left: .5%;
+    }*/
+
+    .label{
+        margin-right: 2%;
     }
   }
