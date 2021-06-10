@@ -23,10 +23,12 @@ main,.about-me,.work, .label, .label h2,.worklabel, .about-p, .about-p p,.contac
     display: flex;
     justify-content: space-between;
     vertical-align: text-bottom;
+    flex-basis: auto;
 }
 
 .nameheader{
     display: flex;
+    flex-basis: auto;
     color: var(--heading);
     font-family: Helvetica,Arial;
     font-size: 200%;
@@ -328,14 +330,6 @@ a:visited{
     .subtitle {
         font-size: 200%;
     }
-
-    /*.footer img{
-        width: 100%;
-        height: 100%;
-        margin-top: 1%;
-        margin-right: .5%;
-        margin-left: .5%;
-    }*/
 
     .label{
         margin-right: 2%;
