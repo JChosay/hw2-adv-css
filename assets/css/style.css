@@ -1,0 +1,226 @@
+:root{
+    --dark: #001219;
+    --lightdark1: #005f73;
+    --lightdark2: #0a9396;
+    --heading: #ae2012;
+    --heading2: #bb3e03;
+    --heading3: #ca6702;
+    --accentyellow: #ee9b00;
+    --accenttan: #e9d8a6;
+}
+
+*{
+    background-color: var(--lightdark1);
+    box-sizing: border-box;
+}
+
+main,.about-me,.work, .label, .label h2,.worklabel, .about-p, .about-p p,.contact, .contact-linx, .contact-linx a, .work-examples{
+    background-color: var(--accenttan);
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: text-bottom;
+}
+
+.nameheader{
+    display: flex;
+    color: var(--heading);
+    font-family: Helvetica,Arial;
+    font-size: 200%;
+    margin-top: -2%;
+    margin-bottom: -2%;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.seperator{
+    display: flex;
+    width: 25.5%;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner{
+    position: relative;
+}
+
+.subtitle{
+    position:absolute;
+    top: 45%;
+    right: 1%;
+    font-family: Brush Script MT,copperplate, cambria, optima;
+    font-size: 300%;
+    text-shadow: -2.5px 0 black, 0 2.5px black, 2.5px 0 black, 0 -2.5px black;
+    color: var(--heading);
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    background-color: transparent;
+}
+
+.subtitle h2{
+    background-color: transparent;
+}
+
+nav {
+    position: relative;
+    display: flex;
+}
+
+nav a{
+    margin-right: 10px;
+    margin-top: 11%;
+    display: flex;
+    font-size:x-large;   
+    padding:10px;
+    font-family: Garamond, Serif;
+}
+
+.about-me{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+}
+
+.about-photo{
+    background-color: var(--accenttan);
+}
+
+.about-photo img{
+    position: relative;
+    display: flex;
+    padding-top: 1%;
+    background-color: var(--accenttan);
+}
+.about-p{
+    display: flex;
+    flex-direction: column;
+    width:67%;
+    padding-left: 1%;
+}
+
+.label{
+    display: inline;
+    position: relative;
+    color: var(--heading);
+    width: 10%;
+    vertical-align: text-top;
+    text-align: right;
+    font-size: 20px;
+    line-height: 10%;
+    padding-right: 1%;
+}
+
+.work img{
+    border: solid;
+    border-color: var(--lightdark2);
+}
+
+.work img
+
+.work img:hover, .worklabel:hover{
+    border-color: var(--heading);
+}
+
+.work{
+    display: flex;
+    justify-content: flex-start;
+    position:relative;
+}
+
+.worklabel h1{
+    color: var(--heading);
+    background-color: var(--dark);
+    font-family: Helvetica,Arial;
+}
+
+.worklabel h3{
+    color: var(--accentyellow);
+    background-color: var(--dark);
+    font-family: 'Arial Narrow';
+}
+
+.worklabel{
+    position:absolute;
+    top: 65%;
+    left:0%;
+    width: auto;
+    line-height: 10%;
+    background-color: var(--dark);
+    border:solid;
+    border-color: var(--lightdark2);
+}
+
+.work-examples{
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.work-examples a:link{
+    background-color: transparent;
+}
+
+.work-examples a:visited{
+    background-color: transparent;
+}
+
+.examplework{
+    position: relative;
+    background-color: var(--accenttan);
+}
+
+.examplework img:hover{
+    border-color: var(--heading);
+}
+.contact{
+    display: flex;
+    position: relative;
+    width:100%;
+}
+
+.contact-linx{
+    font-size: x-large;
+    display: flex;
+    width:87%;
+    justify-content: space-between;
+    font-family: Garamond, Serif;
+}
+
+.contact-linx a{
+    display: flex;
+    margin-top: 2%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer img{
+    width: 3%;
+    height: 3%;
+    margin-top: 1%;
+    margin-right: .5%;
+    margin-left: .5%;
+}
+
+a:hover{
+    color: var(--dark);
+}
+
+a:link{
+    color: var(--heading3);
+}
+
+a:visited{
+    color: var(--heading3);
+}
