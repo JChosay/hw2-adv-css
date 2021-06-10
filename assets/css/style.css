@@ -18,6 +18,10 @@ main,.about-me,.work, .label, .label h2,.worklabel, .about-p, .about-p p,.contac
     background-color: var(--accenttan);
 }
 
+body{
+    width: auto;
+}
+
 .header{
     position: relative;
     display: flex;
@@ -44,10 +48,7 @@ main,.about-me,.work, .label, .label h2,.worklabel, .about-p, .about-p p,.contac
 
 .banner{
     position: relative;
-}
-
-.banner{
-    position: relative;
+    width: 100%;
 }
 
 .subtitle{
@@ -102,6 +103,7 @@ nav a{
     padding-top: 1%;
     background-color: var(--accenttan);
 }
+
 .about-p{
     display: flex;
     flex-direction: column;
@@ -333,4 +335,36 @@ a:visited{
     .label{
         margin-right: 2%;
     }
+  }
+
+  @media sceen and (max-width:320) {
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: text-bottom;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+    
+    .nameheader{
+        display: flex;
+        background-size: auto;
+        color: var(--heading);
+        font-family: Helvetica,Arial;
+        font-size: 200%;
+        margin-top: -2%;
+        margin-bottom: -2%;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    .subtitle {
+        font-size: 1000px;
+        width: 100%;
+    }
+
+    .label{
+        font-size: 70%;
+    }
+
   }
