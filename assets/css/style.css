@@ -20,6 +20,7 @@ main,.about-me,.work, .label, .label h2,.worklabel, .about-p, .about-p p,.contac
 
 body{
     width: auto;
+    min-width:376px;
 }
 
 .header{
@@ -258,10 +259,6 @@ a:visited{
 }
 
 @media screen and (max-width: 992px) {
-    * {
-        background:var(--heading3);
-    }
-
     a:link{
         color: var(--dark);
     }
@@ -295,7 +292,9 @@ a:visited{
 
 @media screen and (max-width: 803px) {
     .subtitle {
-    top: 5%;
+        top: 15%;
+        font-size: 150%;
+        left: 1%;
     }
 
     .footer img{
@@ -323,13 +322,52 @@ a:visited{
     }
 }
 
-@media screen and (max-width: 734px) {
-    .subtitle {
-    font-size: 200%;
+@media screen and (max-width: 750px) {
+    .about-me, .work, .contact{
+        display: grid;
+    }
+
+    #selfpic{
+        padding-left: 1%;
     }
 
     .label{
-        margin-right: 2%;
+        width: auto;
+        text-align: left;
+    }
+
+    .header{
+        display: block;
+    }
+
+    .header h1{
+        margin-bottom: 2.6%;
+        margin-top: 3%;
+    }
+
+    nav a{
+        margin-right: 0px;
+        margin-top: 0%;
+        display: flex;
+        font-size:large;   
+        padding:1%;
+        font-family: Garamond, Serif;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .label{
+        width: 10%;
+        text-align: right;
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .subtitle {
+        top: -10%;
+        font-size: 150%;
+        left: 1%;
     }
 }
 
@@ -352,11 +390,6 @@ a:visited{
         margin-top: -2%;
         margin-bottom: -2%;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    }
-
-    .subtitle {
-        font-size: 1000px;
-        width: 100%;
     }
 
     .label{
