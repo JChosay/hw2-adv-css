@@ -288,6 +288,14 @@ a:visited{
         margin-right: .5%;
         margin-left: .5%;
     }
+
+    .nameheader{
+        font-size: 150%;
+    }
+
+    nav a{
+        font-size:large;   
+    }
 }
 
 @media screen and (max-width: 803px) {
@@ -364,6 +372,8 @@ a:visited{
         padding:1%;
         font-family: Garamond, Serif;
     }
+
+    
 }
 
 @media screen and (min-width: 751px) {
@@ -392,16 +402,7 @@ a:visited{
         flex-direction: column;
     }
     
-    .nameheader{
-        display: flex;
-        background-size: auto;
-        color: var(--heading);
-        font-family: Helvetica,Arial;
-        font-size: 200%;
-        margin-top: -2%;
-        margin-bottom: -2%;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    }
+    
 
     .label{
         font-size: 70%;
