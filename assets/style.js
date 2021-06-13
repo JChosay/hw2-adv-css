@@ -9,6 +9,9 @@ function checkloadsize(){
         document.getElementById("selfpic").src="./assets/images/selfsmall1.jpg";
         document.getElementById("about-text").innerText ="about me";
         document.getElementById("me-text").innerText ="";
+
+        document.getElementById("contactFlex").innerText ="contact me";
+        document.getElementById("meFlex").innerText ="";
         
           
     }
@@ -16,6 +19,9 @@ function checkloadsize(){
     if (window.innerWidth>750){
         document.getElementById("about-text").innerText ="about";
         document.getElementById("me-text").innerText ="me";
+
+        document.getElementById("contactFlex").innerText ="contact";
+        document.getElementById("meFlex").innerText ="me";
     }
 }
 
@@ -26,6 +32,9 @@ function handleTabletChangeMQ1(e){
         document.getElementById("selfpic").src="./assets/images/selfsmall1.jpg";
         document.getElementById("me-text").innerText ="about me";
         document.getElementById("about-text").innerText ="";
+
+        document.getElementById("contactFlex").innerText ="contact me";
+        document.getElementById("meFlex").innerText ="";
     }
 }
 mediaQuerySelfie1.addEventListener("change", handleTabletChangeMQ1);
@@ -59,6 +68,9 @@ function handleTabletChangeMQ2(e){
         document.getElementById("selfpic").src="./assets/images/self.jpg";
         document.getElementById("about-text").innerText ="about";
         document.getElementById("me-text").innerText ="me";
+
+        document.getElementById("contactFlex").innerText ="contact";
+        document.getElementById("meFlex").innerText ="me";
     }
 }
 mediaQuerySelfie2.addEventListener("change", handleTabletChangeMQ2);

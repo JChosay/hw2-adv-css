@@ -327,6 +327,16 @@ a:visited{
         display: grid;
     }
 
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-linx{
+        display: inline-block;
+        margin-left: 1%;
+    }
+
     #selfpic{
         padding-left: 1%;
     }
@@ -334,6 +344,7 @@ a:visited{
     .label{
         width: auto;
         text-align: left;
+        margin-left: 1%;
     }
 
     .header{
