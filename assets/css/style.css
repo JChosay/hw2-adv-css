@@ -128,8 +128,6 @@ nav a{
     border-color: var(--lightdark2);
 }
 
-.work img
-
 .work img:hover, .worklabel:hover{
     border-color: var(--heading);
 }
@@ -168,7 +166,7 @@ nav a{
     width: 85%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: .5%;
 }
 
 .work-examples a:link{
@@ -187,6 +185,11 @@ nav a{
 .examplework img:hover{
     border-color: var(--heading);
 }
+
+#nixonhack{
+    background-color: var(--accenttan);
+}
+
 .contact{
     display: flex;
     position: relative;
@@ -236,40 +239,27 @@ a:visited{
     .subtitle {
         top: 25%;
     }
-  }
+}
 
-  @media screen and (max-width: 1240px) {
+@media screen and (max-width: 1240px) {
     .seperator {
         width: 10%;
     }
-    
-    /*.about-photo img {
-        src: "./assets/images/selfsmall.jpg";
-    }
-
-    /*.about-photo img{
-        width: 70%;
-        height: auto;
-    }
-
-    .about-photo{
-        width: 20%;
-    }*/
 
     .about-photo, .about-photo img{
         flex-direction: column;
     }
-  }
+}   
 
-  @media screen and (max-width: 1040px) {
+@media screen and (max-width: 1040px) {
     .seperator {
         width: 5%;
     }
-  }
+}
 
 @media screen and (max-width: 992px) {
     * {
-      background:var(--heading3);
+        background:var(--heading3);
     }
 
     a:link{
@@ -286,10 +276,10 @@ a:visited{
 
     .seperator {
         width: 0px;
-    }
-  }
+        }
+}
 
-  @media screen and (max-width: 961px) {
+@media screen and (max-width: 961px) {
     .subtitle {
       top: 10%;
     }
@@ -301,11 +291,11 @@ a:visited{
         margin-right: .5%;
         margin-left: .5%;
     }
-  }
+}
 
-  @media screen and (max-width: 803px) {
+@media screen and (max-width: 803px) {
     .subtitle {
-      top: 5%;
+    top: 5%;
     }
 
     .footer img{
@@ -315,9 +305,9 @@ a:visited{
         margin-right: .5%;
         margin-left: .5%;
     }
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     * {
       background:var(--accentyellow);
     }
@@ -325,19 +315,25 @@ a:visited{
     .label{
         width: 15%;
     }
-  }
 
-  @media screen and (max-width: 734px) {
+    /*.nixonhack*/#nixon-shark img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 734px) {
     .subtitle {
-        font-size: 200%;
+    font-size: 200%;
     }
 
     .label{
         margin-right: 2%;
     }
-  }
+}
 
-  @media sceen and (max-width:320) {
+@media sceen and (max-width:320) {
     .header{
         position: relative;
         display: flex;
@@ -366,5 +362,4 @@ a:visited{
     .label{
         font-size: 70%;
     }
-
-  }
+}
